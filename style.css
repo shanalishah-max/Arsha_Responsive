@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-color:#37517E;
+    --blue:#37517E;
+}
+.text-blue{
+    color: var(--blue) !important;
+}
+.bg-blue{
+    background-color: var(--blue) !important;
+}
+.text-sm{
+    font-size: 0.8rem;
+}
+.hero-section{
+    background-color: var(--main-color);
+}
+
+.hero-section a{
+    color: white !important;
+}
+.dropdown-menu a{
+    color: black !important;
+}
+
+.move-image{
+    animation: move 2s linear alternate infinite;
+}
+
+@keyframes move {
+    from{
+        transform: translateY(0)
+    }to{
+       transform: translateY(-20px)
+    }
+}
+
+.brand-images img{
+    filter: grayscale(100%);
+    transition: all 0.2s;
+
+}
+
+.brand-images img:hover{
+    filter: grayscale(0%);
+    scale: 1.05;
+    cursor: pointer;
+}
+.gray{
+    width: 12%;
+    height: 2px;
+    background-color: lightgray;
+    margin: auto;
+    position: relative;
+}
+.blue{
+    width: 50%;
+    height: 3px;
+    background-color: var(--bs-info);
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn-hover-text:hover{
+    color: white !important;
+}
+
+.my-services-card{
+    transition: all 0.4s;
+}
+.my-services-card:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.my-services-card h4{
+    transition: all 0.4s;
+}
+.my-services-card:hover h4{
+    color: var(--bs-info) !important;
+}
+
+/* .card-content{
+    position: relative;
+}
+.circle{
+    position: absolute;
+    top: -40px;
+    left: 30px;
+} */
+
+.card .card-content{
+    transition: all 0.3s;
+}
+.card:hover .card-content{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.card{
+    overflow: hidden;
+}
+.card .s-image{
+    transition: all 0.3s;
+    
+}
+.card:hover .s-image{
+    scale: 1.07;
+    cursor: pointer;
+}
+
+.img-section{
+    background: linear-gradient(to right,rgba(88,113,147,0.5),rgba(88,113,147,0.8)), url('https://bootstrapmade.com/content/demo/Arsha/assets/img/bg/bg-8.webp') fixed;
+}
+
+.img-underlay{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(90px);
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.7);
+}
+.img-underlay:hover .overlay{
+    transform: translateY(0);
+    
+}
+
+.social-icon i{
+    transition: all 0.3s;
+}
+.social-icon i:hover{
+    background-color: var(--bs-info);
+    color: white;
+}
